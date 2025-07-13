@@ -12,10 +12,10 @@ import json
 THRESHOLD = 4264.8 # 4264.8 for DB16 ; 3200 for R5.5
 TARGET_SIZE = (480, 270)
 
-# USERNAME = "admin"
-# PASSWORD = "passkey"
-# CAMERA_IP = "cam_ip" #192.168.1.100
-# RTSP_URL = f"rtsp://{USERNAME}:{PASSWORD}@{CAMERA_IP}:554/cam/realmonitor?channel=1&subtype=1"
+USERNAME = "admin"
+PASSWORD = "passkey"
+CAMERA_IP = "cam_ip" #192.168.1.100
+RTSP_URL = f"rtsp://{USERNAME}:{PASSWORD}@{CAMERA_IP}:554/cam/realmonitor?channel=1&subtype=1"
 
 model = YOLO("best.pt")
 
@@ -215,6 +215,6 @@ def process_rtsp_stream(rtsp_url, roi_points):
 
 # --- Run ---
 roi_points = [(677, 1288), (1325, 1418), (1425, 1171), (893, 1051)]
-video_path = "long_video.mov"
-#process_rtsp_stream(RTSP_URL, roi_points)
-process_rtsp_stream(video_path, roi_points)
+#video_path = "long_video.mov"
+process_rtsp_stream(RTSP_URL, roi_points)
+#process_rtsp_stream(video_path, roi_points)
