@@ -1,1 +1,3 @@
 sample_output/*.html linguist-generated
+sample_output/*.txt linguist-generated
+sample_output/*.json linguist-generated
