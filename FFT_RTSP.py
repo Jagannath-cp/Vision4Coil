@@ -9,7 +9,7 @@ from pathlib import Path
 import json
 
 # ----- CONFIG -----
-THRESHOLD = 4264.8 # 4264.8 for DB16 ; 3200 for R5.5
+THRESHOLD = 4264.8 # 4264.8 for DB16 ; 3200 for R5.5 ; 3900 for R8.5
 TARGET_SIZE = (480, 270)
 
 USERNAME = "admin"
