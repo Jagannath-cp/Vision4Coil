@@ -67,6 +67,7 @@ FFT intensity threshold varies by coil type and must be set manually in the scri
 ```python
 THRESHOLD = 4264.8  # For DB16
 # THRESHOLD = 3200  # For R5.5
+# THRESHOLD = 3900  # For R8.5
 ```
 
 > In future versions, a configuration file will support automatic mapping between coil thickness, threshold, and acceptable ranges.
