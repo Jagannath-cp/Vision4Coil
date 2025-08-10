@@ -112,7 +112,8 @@ def detect_tail_and_save(frames, roi_points, save_path, conf_thresh=0.6):
 def process_rtsp_stream(rtsp_url, roi_points):
     print("Real-time stream started.")
 
-    cap = cv2.VideoCapture(rtsp_url)
+    # cap = cv2.VideoCapture(rtsp_url)
+    cap = cv2.VideoCapture(rtsp_url, cv2.CAP_FFMPEG)
     if not cap.isOpened():
         print("Error: Cannot open RTSP stream.")
         return
